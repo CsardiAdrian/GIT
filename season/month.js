@@ -1,22 +1,30 @@
+// Aktuális hónap lekérése
 const date = new Date();
 var honap = date.toLocaleString('default', { month: 'long' });
+// Tömb a hónapok nevével
 var monthNames = ["január", "február", "március", "április", "május", "június",
     "július", "augusztus", "szeptember", "október", "november", "december"
 ];
+// Select kiválasztása
 var select = document.getElementById("monthNames");
+// Select feltöltése a hónapok neveivel 
 for (var i = 0; i < monthNames.length; i++) {
-    var optn = monthNames[i];
-    var el = document.createElement("option");
+    var optn = monthNames[i]; // 
+    var el = document.createElement("option"); // option létrehozása
     el.textContent = optn;
     select.appendChild(el);
 }
+// A kiválasztott option értékének lekérése
 document.getElementById('monthNames').onchange = function(event) {
-    event.preventDefault();
-    var honap = document.forms[0].monthNames.value;;
-    switchSeason(honap);
-}
+        event.preventDefault();
+        var honap = document.forms[0].monthNames.value;;
+        // Switch meghívása
+        switchSeason(honap);
+    }
+    // Switch meghívása az alap beállításhoz
 switchSeason(honap);
 
+// Switch function 
 function switchSeason(honap) {
     switch (honap) {
         case 'március':
