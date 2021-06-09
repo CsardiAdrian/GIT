@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #efefef;
+  font-size: 1.2em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+body h1 {
+  margin: 20px;
+  color: #fff;
+}
+
+body h1 span {
+  color: #074b6f;
+}
+
+#container {
+  background-color: #efefef;
+  max-width: 600px;
+  height: 400px;
+  padding: 30px;
+  margin: 0 auto;
+  border-radius: 20px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  -webkit-box-shadow: 2px 2px 8px #777;
+          box-shadow: 2px 2px 8px #777;
+}
+
+#container #season {
+  background-color: #33cccc9c;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 1.3em;
+  line-height: 1.4em;
+  font-weight: 800;
+  min-width: 200px;
+  -webkit-box-shadow: 2px 2px 8px #777;
+          box-shadow: 2px 2px 8px #777;
+}
+
+#container #season .month {
+  background-color: #074b6f;
+  display: block;
+  border-radius: 30px;
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 0.6em;
+  line-height: 1.1em;
+  font-weight: 300;
+  text-align: center;
+}
+
+.tavasz {
+  background-image: url("img/tavasz.jpg");
+}
+
+.nyar {
+  background-image: url("img/nyar.jpg");
+}
+
+.osz {
+  background-image: url("img/osz.jpg");
+}
+
+.tel {
+  background-image: url("img/tel.jpg");
+}
+
+select {
+  border: none;
+  margin: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  outline: none;
+  width: 220px;
+}
+/*# sourceMappingURL=style.css.map */
